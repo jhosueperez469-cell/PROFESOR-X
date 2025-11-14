@@ -1,10 +1,8 @@
-# Certificado Web — GitHub Pages
+# Certificado Web
 
-Este repositorio contiene una versión web del certificado, lista para publicarse mediante **GitHub Pages**.
+Este repositorio contiene los archivos necesarios para visualizar el certificado en una página web mediante GitHub Pages.
 
-## 📁 Estructura del proyecto
-Asegúrate de mantener esta estructura:
-
+## Estructura
 ```
 /
 ├─ index.html
@@ -13,42 +11,27 @@ Asegúrate de mantener esta estructura:
    └─ image002.png
 ```
 
-## 🚀 Publicar en GitHub Pages
+## Publicación en GitHub Pages
+1. Subir `index.html` y la carpeta `index_archivos/` al repositorio.
+2. Ir a **Settings → Pages**.
+3. Seleccionar:
+   - Branch: `main`
+   - Folder: `/ (root)`
+4. Guardar.
 
-1. Crea un repositorio nuevo en GitHub.
-2. Sube:
-   - `index.html`
-   - La carpeta `index_archivos/` con las imágenes.
-3. Ve a **Settings → Pages**.
-4. En **Source**, selecciona:
-   - **Branch:** `main`
-   - **Folder:** `/ (root)`
-5. Guarda.
-
-Después de unos segundos, tu sitio estará disponible en:
+La página quedará publicada en:
 ```
-https://<tu-usuario>.github.io/<nombre-del-repo>/
+https://<usuario>.github.io/<repositorio>/
 ```
 
-## 📅 Fecha automática
-El archivo `index.html` ya incluye un script que actualiza cada día la fecha mostrada en formato:
-```
-DD/MM/YYYY
-```
-No requiere modificaciones.
+## Fecha automática
+El archivo `index.html` actualiza la fecha diariamente sin necesidad de ajustes adicionales.
 
-## 🧪 Probar localmente
-Si quieres ver la página antes de subirla:
-
+## Prueba local
 ```
 python -m http.server 8000
 ```
-
-Luego abre:
-
+Abrir en el navegador:
 ```
 http://localhost:8000
 ```
-
-## ✔️ Listo para usar
-Solo sube los archivos al repositorio y activa GitHub Pages. Tu certificado web quedará funcionando automáticamente.
