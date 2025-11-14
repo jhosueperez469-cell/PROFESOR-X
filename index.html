@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Certificado - Versión web</title>
+  <style>
+    body{background:#F2F2F2;font-family:Calibri, sans-serif;margin:0;padding:24px}
+    .container{max-width:760px;margin:0 auto}
+    table{width:100%;border-collapse:collapse;background:#ffffff}
+    td{padding:8px;border:none}
+    img{display:block;margin:0 auto}
+    .center{text-align:center}
+    .muted{color:gray;font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="center">
+      <table>
+        <tr><td style="width:40%">&nbsp;</td><td style="width:60%">&nbsp;</td></tr>
+        <tr>
+          <td colspan="2" style="background:white" class="center">
+            <img src="index_archivos/image001.png" alt="logo" width="474" height="124">
+          </td>
+        </tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr>
+          <td class="muted"><span id="fecha"></span></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr>
+          <td colspan="2" style="background:white" class="center">
+            <img src="index_archivos/image002.png" alt="icon" width="41" height="41">
+            <h3>El certificado ha sido verificado exitosamente</h3>
+            <p><strong>Consecutivo:</strong> 00000060009-2025-1</p>
+            <p><strong>Contribuyente:</strong> CENTRO COMERCIAL DON BENJI</p>
+            <p><strong>Identificación:</strong> 900880338-3</p>
+            <p><strong>Dirección:</strong> CARRERA 43 38 03</p>
+            <p><strong>Ref. Catastral:</strong> 010200960007901</p>
+            <p><strong>Fecha Acta:</strong> 11/08/2025</p>
+            <p><strong>Fecha Expedición:</strong> 11/11/2025</p>
+            <p><strong>Fecha Expiración:</strong> 11/11/2026</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function pad(n){return n<10?('0'+n):n}
+    function updateDate(){
+      const d = new Date();
+      const day = pad(d.getDate());
+      const month = pad(d.getMonth()+1);
+      const year = d.getFullYear();
+      document.getElementById('fecha').textContent = day + '/' + month + '/' + year;
+    }
+    updateDate();
+  </script>
+</body>
+</html>
